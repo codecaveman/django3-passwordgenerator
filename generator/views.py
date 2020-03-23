@@ -8,10 +8,12 @@ import random
 def home(request):
     return render(request, 'generator/home.html', {'password': 'dsafasdfe34353'})
 
+
 def about(request):
     return render(request, 'generator/about.html')
 
-def password(request):
+
+def password(requestk):
     characters = list("abcdefghijklmnopqrstuvwxyz")
     password = ""
     length = int(request.GET.get('length'))
